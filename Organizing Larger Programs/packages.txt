@@ -1,0 +1,14 @@
+import urllib
+import urllib.request
+type(urllib)
+<class 'module'>
+type(urllib.request)
+<class 'module'>
+urllib.__path__
+['/usr/lib/python3.8/urllib']
+urllib.request.__path__
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'urllib.request' has no attribute '__path__'
+
+Both have the same type of module, however, only urllib, which is a package, has a dunder path. Packages are generally directories where as modules are just files.
